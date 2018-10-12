@@ -8,5 +8,6 @@ class HomePageView(TemplateView):
         return render(request, 'index.html', context=None)
 
     def test(self, request):
-        return render(request, 'test.html', context=None)
+        return HttpResponse("test page!")
+        #return render(request, 'test.html', context=None)
     
