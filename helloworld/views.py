@@ -7,7 +7,9 @@ class HomePageView(TemplateView):
     def get(self, request, **kwargs):
         return render(request, 'index.html', context=None)
 
-    def test(self, request):
-        return HttpResponse("test page!")
-        #return render(request, 'test.html', context=None)
+def test(self, request):
+    return HttpResponse("test page!")
+    #return render(request, 'test.html', context=None)
+
+
     
